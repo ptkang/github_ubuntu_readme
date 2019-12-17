@@ -26,3 +26,13 @@ method2:
     git commit -m "first version of h265 parse bs to stream or file"
     git push -u origin master # 第一次提交分支 'master' 设置为跟踪来自 'origin' 的远程分支 'master', 不然之后git pull会报不知道分支错误
     git push origin master # 之后提交
+
+set upstream method:
+git clone git@github.com:<username>/cpython.git
+cd cpython
+git remote add upstream git@github.com:python/cpython.git
+git remote -v
+    origin  git@github.com:<your-username>/cpython.git (fetch)
+    origin  git@github.com:<your-username>/cpython.git (push)
+    upstream        git@github.com:python/cpython.git (fetch)
+    upstream        git@github.com:python/cpython.git (push)
